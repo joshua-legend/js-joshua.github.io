@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "러닝 자바스크립트 1화"
+title:  "Learning JS 2021-11"
 date:   2019-03-23 21:03:36 +0530
 categories: Javascript NodeJS
 ---
-그러하다.
+YES
 
 ```javascript
 const Razorpay = require('razorpay');
