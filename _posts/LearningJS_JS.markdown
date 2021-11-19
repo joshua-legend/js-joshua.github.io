@@ -4,6 +4,8 @@ title:  "자바스크립트와 ECMAscript 차이는?"
 date:   2021-11-19
 categories: Javascript
 ---
+#자바스크립트 와 ECMAscript 
+
 Javascript = ECMAscrpit + DOM + BOM
 
 Node = JS를 브라우저 밖에서 실행 해주는 도구!
@@ -27,3 +29,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+#이 책을 근간으로 발췌함
+![Learning](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)
