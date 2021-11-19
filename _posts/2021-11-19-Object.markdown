@@ -4,16 +4,16 @@ title:  "JS의 객체는 무엇일까? 그리고 데이터 타입"
 date:   2021-11-19
 categories: Javascript
 ---
-#객체의 본질은 컨테이너
+# 객체의 본질은 컨테이너
 
-###객체의 콘텐츠 **Property** or **Member**
+### 객체의 콘텐츠 **Property** or **Member**
 
 ```javascript
 const obj =  {}
 obj.color = "yellow"
 obj["not an Indenifier"] = 3
 ```
-###obj는 계속 같은 객체이며, 바뀐 것은 *객체의 프로퍼티*이다.
+### obj는 계속 같은 객체이며, 바뀐 것은 *객체의 프로퍼티*이다.
 
 ```javascript
 const sam = {
@@ -37,7 +37,7 @@ delete sam.speak
 > Dangling comma, Terminal comma 는 끝부분에 붙히는것 (지향)
 
 ***
-#Data Type 변환
+# Data Type 변환
 
 ### 숫자로 바꾸기
 ```javascript

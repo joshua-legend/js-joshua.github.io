@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "표현식과 연산자"
+title:  "JS의 꽃 함수"
 date:   2021-11-19
 categories: Javascript
 ---

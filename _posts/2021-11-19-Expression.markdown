@@ -4,7 +4,7 @@ title:  "표현식과 연산자"
 date:   2021-11-19
 categories: Javascript
 ---
-#Statement
+# Statement
 
 ### 프로그램을 구성하는 기본 단위/ 최소 실행 단위
 1. 프로그램: 문의 집합
@@ -33,7 +33,7 @@ for (var i = 0 ; i < 2; i++) { console.log(i); }
 ```
 
 ***
-###Typeof, Destructing Assignment, template literals, OR표현식
+### Typeof, Destructing Assignment, template literals, OR표현식
 
 1.Typeof 
 > typeof null = "object"
