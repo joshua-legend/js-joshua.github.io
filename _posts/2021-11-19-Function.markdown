@@ -6,9 +6,10 @@ categories: Javascript
 ---
 ---
 
+
 > call invoke execute run => function()
 
-##매개변수
+## 매개변수
 
 ### 원시 값(value Type)은 불변, 객체(Reference Type)는 가변
 
