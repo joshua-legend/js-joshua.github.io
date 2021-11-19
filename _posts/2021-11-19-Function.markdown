@@ -4,57 +4,82 @@ title:  "JS의 꽃 함수"
 date:   2021-11-19
 categories: Javascript
 ---
-#Statement
+---
 
-### 프로그램을 구성하는 기본 단위/ 최소 실행 단위
-1. 프로그램: 문의 집합
-2. 프로그래밍: 문을 작성 후 순서 나열 
-***
-토큰: 문법적으로 나눌 수 없는 코드의 기본요소
+> call invoke execute run => function()
+
+##매개변수
+
+### 원시 값(value Type)은 불변, 객체(Reference Type)는 가변
 
 ```javascript
-let sum = 1 + 2 ;
+function f(x) {
+    console.log(`f 내부: x=${x}`);
+    x=5;
+    console.log(`f 내부: x=${x} 할당 후`);
+}
 
-토큰이 let,sum,=,1,+,2,;
-//변수 선언문
-var x;
-
-//할당문
-x = 5;
-
-//함수 선언문
-function foo() {}
-
-//조건문
-if (x > 1) { console.log(x); }
-
-//반복문
-for (var i = 0 ; i < 2; i++) { console.log(i); }
+let x = 3;
+console.log(`f 호출하기 전: x=${x}`);
+f(x);
+console.log(`f 호출한 후: x=${x}`);
 ```
 
-***
-###Typeof, Destructing Assignment, template literals, OR표현식
-
-1.Typeof 
-> typeof null = "object"
-> 
-> typeof [] = "object"
-
-2.Destructing Assignment
+### 객체의 프로퍼티인 함수
 ```javascript
-const obj = {b:2, c:3, d:4};
-const {a,b,c} = obj;
-a; // undefined;
-b; // 2
-c; // 3
-d; // ReferenceError;
+const o = {
+    name : `Wallance`,
+    bark : function (){return `멍멍`}
+}
+```
 
-const obj1 = {b:2, c:3, d:4};
-let a,b,c;
-({a,b,c} = obj1);
+### this 키워드
+*일반적으로 this는 객체의 프로퍼티인 함수에서 의미한다.this는 호출한 메서드를 소유하는 객체*
 
-const arr = [1,2,3,4,5];
-let [x,y,...rest] = arr;
-rest; // 3,4,5;
+
+
+### 화살표 표기법
+
++ function 생략가능
++ 함수에 매개변수가 **단 하나**라면 (()) 생략 가능
++ 함수 바디가 표현식 하나라면 중괄호와 return 생략 가능
++ 항상 익명
+
+```javascript
+const f1 = function () {return "hello!";}
+const f1 = () => "hello";
+
+const f2 = function (name) {`hello ${name}`}
+const f2 = (name) => `hello ${name}`;
+
+const f3 = function (a,b) { return a+b;}
+const f3 = (a,b) => a + b;
+```
+
+### call,apply,bind
+
+> call는 this 과 apply는 ...,Array
+
+```javascript
+function update(birth, occup) {
+    this.birth = birth;
+    this.occup = occup;
+}
+const bruce = {name:`bruce`};
+const madeli = {name:`madeli`};
+
+update.call(bruce,1993,`singer`);
+// bruce
+// {name: 'bruce', birth: 1993, occup: 'singer'}
+
+update.apply(madeli,[1955,`actor`]);
+// madeli
+// {name: 'madeli', birth: 1995, occup: 'actor'}
+
+const arr = [5,1,25,9,-19];
+
+Math.min.apply(null,arr);
+Math.min.apply(...arr);
+
 
 ```
