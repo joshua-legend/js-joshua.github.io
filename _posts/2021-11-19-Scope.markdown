@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "스코프..."
+title:  "스코프...![Learning Javascript](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)"
 date:   2021-11-19
 categories: Javascript
 ---
