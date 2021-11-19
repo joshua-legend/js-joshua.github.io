@@ -4,6 +4,8 @@ title:  "자바스크립트와 ECMAscript 차이는?"
 date:   2021-11-19
 categories: Javascript
 ---
+---
+
 # 자바스크립트 와 ECMAscript 
 
 Javascript = ECMAscrpit + DOM + BOM
