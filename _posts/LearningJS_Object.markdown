@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JS의 객체는 무엇일까?"
+title:  "JS의 객체는 무엇일까? 그리고 데이터 타입"
 date:   2021-11-19
 categories: Javascript
 ---
@@ -34,4 +34,17 @@ sam.speak = function () {
 delete sam.speak
 ```
 
->Dangling comma, Terminal comma 는 끝부분에 붙히는것 (지향)
+> Dangling comma, Terminal comma 는 끝부분에 붙히는것 (지향)
+
+***
+#Data Type 변환
+
+### 숫자로 바꾸기
+```javascript
+Number(numStr)
+
+Number
+parseInt()
+valueOf
+toString
+```
