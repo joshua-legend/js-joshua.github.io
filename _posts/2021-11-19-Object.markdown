@@ -50,6 +50,3 @@ parseInt()
 valueOf
 toString
 ```
-
-# 이 책을 근간으로 발췌함
-![Learning Javascript](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)
