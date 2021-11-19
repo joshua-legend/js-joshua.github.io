@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "자바스크립트와 ECMAscript 차이는?"
+title:  "자바스크립트와 ECMAscript 차이는? (Learning JS)"
 date:   2021-11-19
 categories: Javascript
 ---
@@ -26,5 +26,5 @@ let undefinedType = undefined;
 let symbolType = Symbol("onlyOne");
 ```
 
-#이 책을 근간으로 발췌함
+# 이 책을 근간으로 발췌함
 ![Learning](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)

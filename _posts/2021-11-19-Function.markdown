@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JS의 꽃 함수"
+title:  "JS의 꽃 함수 (Learning JS)"
 date:   2021-11-19
 categories: Javascript
 ---
@@ -84,3 +84,6 @@ Math.min.apply(...arr);
 
 
 ```
+
+# 이 책을 근간으로 발췌함
+![Learning Javascript](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)

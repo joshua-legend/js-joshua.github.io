@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "표현식과 연산자"
+title:  "표현식과 연산자 (Learning JS)"
 date:   2021-11-19
 categories: Javascript
 ---
@@ -60,3 +60,6 @@ let [x,y,...rest] = arr;
 rest; // 3,4,5;
 
 ```
+# 이 책을 근간으로 발췌함
+# 이 책을 근간으로 발췌함
+![Learning Javascript](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)

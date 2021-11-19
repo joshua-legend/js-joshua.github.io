@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "스코프...![Learning Javascript](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)"
+title:  "스코프...! (Learning JS)"
 date:   2021-11-19
 categories: Javascript
 ---
 ---
-
 ## Scope determines the accessibility (visibility) of variables.
 ```javascript
 function f(x) {
@@ -76,3 +75,8 @@ f();
 ## 스트릭트모드
 
 > es5 문법에서 암시적 전역변수를 차단해준다.
+
+
+
+# 이 책을 근간으로 발췌함
+![Learning Javascript](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)

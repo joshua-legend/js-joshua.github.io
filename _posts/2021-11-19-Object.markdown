@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JS의 객체와 데이터 타입"
+title:  "JS의 객체와 데이터 타입 (Learning JS)"
 date:   2021-11-19
 categories: Javascript
 ---
@@ -50,3 +50,6 @@ parseInt()
 valueOf
 toString
 ```
+
+# 이 책을 근간으로 발췌함
+![Learning Javascript](https://www.hanbit.co.kr/data/books/B2328850940_l.jpg)
