@@ -33,3 +33,36 @@ Object.keys(p)
 > Object.keys는 나열 가능한 문자열 프로퍼티를 배열로 반환
 
  
+## 클래스는 함수다.
+
+```javascript
+class Es6Car{}
+typeof Es6Car; // "function"
+```
+## 프로토 타입
+
+* 모든 함수에는 prototype 프로퍼티 소유
+* 클래스의 인스턴스는 모두 같은 프로토타입 공유
+
+## 다중 상속, 믹스인, 인터페이스
+
+```javascript
+class InsurancePolicy{}
+function makeInsurable(obj){
+    obj.addInsurancePolicy = function (target){this.insurancePolicy = target;}
+    obj.getInsurancePolicy = function () { return this.insurancePolicy;}
+    obj.isInsured = function () {return !!this.insurancePolicy;}
+}
+
+// 개별적으로 보험 가입
+const car1 = new Car();
+makeInsurable(car1);
+car1.addInsurancePolicy(new InsurancePolicy());
+
+// 모든 자동차 보험 가입
+makeInsurable(Car.prototype);
+const car1 = new Car();
+car1.addInsurancePolicy(new InsurancePolicy());
+```
+
+
