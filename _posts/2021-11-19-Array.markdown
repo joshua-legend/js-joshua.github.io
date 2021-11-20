@@ -85,6 +85,48 @@ peopleArr.find(p => p.id === hank.id);
 const arr = [5,7,12,15,17];
 arr.some(x => x%2===0);
 arr.some(x => Number.isInteger(Math.sqrt(x)));
-
-
 ```
+
+
+## map과 filter
+
+* map은 배열 요소를 변형
+
+```javascript
+const cart = [
+    { name : `milk`, price : 33.5},
+    { name : `butter`, price : 12.5}
+]
+
+const name = cart.map(x=>x.name);
+const price = cart.map(x=>x.price);
+const discountPrice = cart.map(x=>x.price * 0.9);
+```
+
+```javascript
+
+const cards = [];
+for(let kind of [`Heart`,`Clover`,`Diamond`,`Spade`])
+    for(let number=1;number<14;number++)
+        cards.push({kind,number});
+    
+//숫자 2의 모음
+cards.filter(x=>x.number===2);
+
+//Diamond의 모음
+cards.filter(x=>x.kind===`Diamond`);
+```
+
+## 문자열 병합 Join
+
+* null, undefined, 삭제된 요소, 정의되지 않은 요소는 빈 문자 취급
+
+```javascript
+const arr = [1,null,"hello","world",true,undefined];
+delete arr[3];
+
+arr.join();
+arr.join(`ㅋㅋ`);
+arr.join(`-`);
+```
+
