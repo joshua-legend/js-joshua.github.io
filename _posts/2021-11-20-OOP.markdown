@@ -64,5 +64,3 @@ makeInsurable(Car.prototype);
 const car1 = new Car();
 car1.addInsurancePolicy(new InsurancePolicy());
 ```
-
-
